@@ -116,12 +116,12 @@ export default function Home() {
         <div className="hero-copy">
           <p className="kicker"><span className="status-dot" /> Software engineer · USA</p>
           <h1>
-            Engineering products<br />
-            that are <em>built to work.</em>
+            Hello, I&apos;m<br />
+            <em>Amulya Murahari.</em>
           </h1>
           <p className="hero-deck">
-            I&apos;m Amulya Murahari — a software engineer building reliable full-stack systems,
-            AI-assisted workflows, and cloud infrastructure.
+            A software engineer building reliable full-stack systems, AI-assisted workflows,
+            and cloud infrastructure.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#experience">Explore my work <Arrow /></a>
