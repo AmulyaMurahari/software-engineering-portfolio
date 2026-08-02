@@ -116,8 +116,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="kicker"><span className="status-dot" /> Software engineer · USA</p>
           <h1>
-            Hello, I&apos;m<br />
-            <em>Amulya Murahari.</em>
+            Amulya<br />
+            <em>Murahari.</em>
           </h1>
           <p className="hero-deck">
             A software engineer building reliable full-stack systems, AI-assisted workflows,
