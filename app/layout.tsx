@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const headerList = await headers();
   const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
   const protocol = headerList.get("x-forwarded-proto") ?? (host?.includes("localhost") ? "http" : "https");
-  const socialImage = host ? `${protocol}://${host}/og.png` : undefined;
+  const socialImage = host ? `${protocol}://${host}/og-blue.png` : undefined;
 
   return {
     title,

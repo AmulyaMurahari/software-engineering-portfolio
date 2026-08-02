@@ -101,12 +101,14 @@ export default function Home() {
       <header className="site-header">
         <a className="monogram" href="#home" aria-label="Amulya Murahari — home">AM<span>.</span></a>
         <nav aria-label="Main navigation">
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <a className="header-cta" href="#contact">Let&apos;s talk <Arrow /></a>
+        <a className="header-cta" href="/Amulya-Murahari-Resume.pdf" target="_blank" rel="noreferrer">Résumé <Arrow /></a>
       </header>
 
       <section id="home" className="hero">
@@ -260,7 +262,6 @@ export default function Home() {
           <div className="contact-links">
             <a href="https://github.com/AmulyaMurahari" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
             <a href="https://www.linkedin.com/in/amulyam97/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
-            <a href="tel:+16823760562">682 376 0562 <Arrow /></a>
           </div>
         </div>
         <footer>
