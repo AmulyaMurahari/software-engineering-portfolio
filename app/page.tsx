@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 const experience = [
   {
@@ -129,7 +130,16 @@ export default function Home() {
           </div>
         </div>
         <aside className="hero-panel" aria-label="Current role">
-          <div className="orb" aria-hidden="true"><span>AM</span></div>
+          <div className="portrait-frame">
+            <Image
+              src="/amulya-murahari.webp"
+              alt="Amulya Murahari"
+              width={1200}
+              height={1200}
+              priority
+              sizes="(max-width: 700px) 116px, (max-width: 980px) 170px, 230px"
+            />
+          </div>
           <div className="current-role">
             <p>Currently</p>
             <h2>Software Engineer</h2>
