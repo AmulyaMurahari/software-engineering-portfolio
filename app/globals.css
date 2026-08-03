@@ -196,8 +196,7 @@ footer p { margin: 0; } footer > a:last-child { justify-self: end; }
 @media (max-width: 700px) {
   .site-header { width: calc(100% - 24px); height: 104px; padding: 0 14px; grid-template-columns: 1fr auto; grid-template-rows: 50px 42px; align-content: center; }
   .site-header .monogram { grid-column: 1; grid-row: 1; }
-  .site-header nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; gap: 20px; width: 100%; padding: 0 2px; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: none; border-top: 1px solid var(--line); }
-  .site-header nav::-webkit-scrollbar { display: none; }
+  .site-header nav { grid-column: 1 / -1; grid-row: 2; justify-content: space-between; gap: clamp(8px, 2.5vw, 14px); width: 100%; padding: 0 2px; border-top: 1px solid var(--line); font-size: clamp(10px, 2.75vw, 11px); }
   .site-header nav a { flex: 0 0 auto; line-height: 42px; }
   .header-cta { grid-column: 2; grid-row: 1; }
   .header-cta { font-size: 12px; }
