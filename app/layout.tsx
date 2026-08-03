@@ -1,37 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { headers } from "next/headers";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const geistSans = localFont({ src: "./fonts/geist-latin.woff2", variable: "--font-geist-sans", display: "swap" });
+const geistMono = localFont({ src: "./fonts/geist-mono-latin.woff2", variable: "--font-geist-mono", display: "swap" });
 
 const title = "Amulya Murahari — Software Engineer";
 const description = "Portfolio of Amulya Murahari, a software engineer building reliable full-stack systems, AI-assisted workflows, and cloud infrastructure.";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const headerList = await headers();
-  const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
-  const protocol = headerList.get("x-forwarded-proto") ?? (host?.includes("localhost") ? "http" : "https");
-  const socialImage = host ? `${protocol}://${host}/og-blue.png` : undefined;
-
-  return {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://amulyamurahari.github.io"),
+  title,
+  description,
+  openGraph: {
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      images: socialImage ? [{ url: socialImage, width: 1731, height: 909, alt: "Amulya Murahari — Software Engineer" }] : [],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: socialImage ? [socialImage] : [],
-    },
-  };
-}
+    type: "website",
+    url: "/",
+    images: [{ url: "/og-blue.png", width: 1731, height: 909, alt: "Amulya Murahari — Software Engineer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-blue.png"],
+  },
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

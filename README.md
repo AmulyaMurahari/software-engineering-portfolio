@@ -2,7 +2,7 @@
 
 A polished, responsive portfolio showcasing my software engineering experience, projects, and technical skills.
 
-**Live site:** [amulya-murahari-portfolio.amulyamurahari.chatgpt.site](https://amulya-murahari-portfolio.amulyamurahari.chatgpt.site)
+**Live site:** [amulyamurahari.github.io](https://amulyamurahari.github.io)
 
 ## Built With
 
