@@ -132,11 +132,12 @@ export default function Home() {
         <aside className="hero-panel" aria-label="Current role">
           <div className="portrait-frame">
             <Image
-              src="/amulya-murahari.webp"
+              src="/amulya-murahari.jpg"
               alt="Amulya Murahari"
               width={1200}
               height={1200}
               priority
+              unoptimized
               sizes="(max-width: 700px) 116px, (max-width: 980px) 170px, 230px"
             />
           </div>
